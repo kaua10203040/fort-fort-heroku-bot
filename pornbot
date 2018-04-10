@@ -1,0 +1,10 @@
+const Discord = require('discord.js');
+const PornBot = new Discord.Client();
+
+PornBot.login(process.env.BOT_TOKEN);
+
+PornBot.on('message', message => {
+    if(message.content.startsWith('!porn')){
+        message.channel.send('https://www.xvideos.com/ ou https://pt.pornhub.com Espero que goste') 
+    }
+});
